@@ -30,7 +30,7 @@ type Erros = ReturnType<typeof validarCard>;
 
 export function Gerador() {
   const [dados, setDados] = useState<DadosCard>(() => dadosIniciais());
-  const [formato, setFormato] = useState<Formato>("post");
+  const [formato, setFormato] = useState<Formato>("story");
   const [erros, setErros] = useState<Erros>({});
   const [erroFoto, setErroFoto] = useState<string | null>(null);
   const [gerando, setGerando] = useState(false);
